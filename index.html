@@ -306,7 +306,7 @@
 
         $("#dfg").click(function () {
             $("#dfg").hide();
-            $.get("http://api.tecchen.xyz/api/quote/history/random/", function (data) {
+            $.get("/data/shanbayToday.json", function (data) {
                 var data = data.data;
                 var wordsOne = data.content+'\n'+data.translation;
                 var wordsTwo = "---- "+data.author;
