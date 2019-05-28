@@ -70,7 +70,7 @@ function begin() {
 }
 var strs = [],
     strs2 = [];
-$("#dfg").click(function () {
+$("#dfg").one("click",(function () {
    $.get("https://api.tecchen.xyz/api/quote/history/random/", function (n) {
         var n = n.data,
             t = n.content + "\n" + n.translation,
@@ -86,7 +86,7 @@ $("#dfg").click(function () {
             ["那就看清楚我要说的下一句话哦 ╰(*°▽°*)╯"]
         ], poll()
     })
-}), $(function () {
+})), $(function () {
     document.onkeydown = function (n) {
         var t = n || window.event || arguments.callee.caller.arguments[0];
         t && 13 == t.keyCode && $(".element3").length > 0 && (window.location.href = "blog/")
