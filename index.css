@@ -4,7 +4,12 @@ body {
     background-attachment: fixed;
     background-position: 80% 100%;
     background-size: cover;
-    clear:both;
+
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
 }
 
 * {
