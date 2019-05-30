@@ -1,10 +1,17 @@
 body {
-    /* background-image: url(./background.jpg);
+    background-image: url(/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 80% 100%;
-    background-size: cover; */
+    background-size: cover;
+}
 
+#dfg {
+    width: 120px;
+    height: 67px;
+    position: absolute;
+    background-image: url(/3.png);
+    background-repeat: no-repeat;
 }
 
 html {
@@ -158,14 +165,6 @@ a:hover {
 
 .box {
     margin-left: 50px
-}
-
-#dfg {
-    width: 120px;
-    height: 67px;
-    position: absolute;
-    background-image: url(/3.png);
-    background-repeat: no-repeat;
 }
 
 .typed-cursor {

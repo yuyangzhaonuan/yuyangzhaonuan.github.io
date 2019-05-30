@@ -1,5 +1,7 @@
 "use strict";
 
+
+var body = document.querySelector('.body');
 function poll() {
     one(0, strs[0])
 }
@@ -71,6 +73,7 @@ function begin() {
 var strs = [],
     strs2 = [];
 $("#dfg").one("click",(function () {
+   $("#c").hide();
    $.get("https://api.tecchen.xyz/api/quote/history/random/", function (n) {
         var n = n.data,
             t = n.content + "\n" + n.translation,
