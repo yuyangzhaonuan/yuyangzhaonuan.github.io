@@ -73,7 +73,12 @@ function begin() {
 var strs = [],
     strs2 = [];
 $("#dfg").one("click",(function () {
-   $("#c").hide();
+    $("#c").hide();
+    document.body.style.backgroundImage = "url(/background.jpg)";
+    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "80% 100%";
+    document.body.style.backgroundSize = "cover";
    $.get("https://api.tecchen.xyz/api/quote/history/random/", function (n) {
         var n = n.data,
             t = n.content + "\n" + n.translation,
